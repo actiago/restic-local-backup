@@ -3,6 +3,12 @@
 # install.sh
 #
 
+#################################
+# Author: Tiago Amaral          #
+# Github: github.com/actiago    #
+# Email: tiagoamaralc@gmail.com #
+#################################
+
 # Cria o diretório do restic
 mkdir -p ~/.restic/
 
