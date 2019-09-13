@@ -14,12 +14,12 @@ RETENTION_WEEKS=16
 RETENTION_MONTHS=18
 RETENTION_YEARS=3
 
-BackupDestination="/home/tiago/MEGAsync/bkp/"
-BackupSource="/home/tiago/projetos /home/tiago/Pictures /home/tiago/Documents /home/tiago/Downloads /home/tiago/github /home/tiago/Desktop"
-BackupExcludes="--exclude-file .backup_exclude .env/backup-exclude"
-BackupTag=Local.Backup
+BackupDestination="/home/tiago/MEGAsync/restic-backup"
+BackupSource="/home/tiago/projetos /home/tiago/Pictures /home/tiago/Documents /home/tiago/Desktop"
+BackupExcludes="--exclude-file .backup_exclude ~/.restic/.env/backup-exclude"
+BackupTag=Work.Backup
 
-source .env/env.sh
+source ~/.restic/.env/restic.env
 
 restic unlock &
 wait $!

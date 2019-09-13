@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BackupDestination="/home/tiago/MEGAsync/bkp/"
+BackupDestination="/home/tiago/MEGAsync/restic-backup"
 
 set -e -o pipefail
 
@@ -11,7 +11,7 @@ exit_hook() {
 }
 trap exit_hook INT TERM
 
-source .env/env.sh
+source ~/.restic/.evn/restic.env
 
 restic -r $BackupDestination check \
   --read-data &
