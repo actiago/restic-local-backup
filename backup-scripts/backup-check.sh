@@ -11,7 +11,7 @@ exit_hook() {
 }
 trap exit_hook INT TERM
 
-source ~/.restic/.evn/restic.env
+source ~/.restic/.env/restic.env
 
 restic -r $BackupDestination check \
   --read-data &
