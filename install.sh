@@ -3,12 +3,6 @@
 # install.sh
 #
 
-#################################
-# Author: Tiago Amaral          #
-# Github: github.com/actiago    #
-# Email: tiagoamaralc@gmail.com #
-#################################
-
 # Cria o diretório do restic
 mkdir -p ~/.restic/
 
@@ -21,9 +15,11 @@ chmod +x backup-scripts/*.sh
 # Copia scripts para o diretório
 sudo cp backup-scripts/backup.sh /usr/local/bin/do-backup
 sudo cp backup-scripts/backup-check.sh /usr/local/bin/check-backup
+sudo cp backup-scripts/slack-notification.sh /usr/local/bin/slack-notification
 
 # Altera a permissão do arquivo .restic.env
 cd ~/.restic/.env
 chmod 400 restic.env
 
-echo "Instalação realizada com sucesso."
+echo "Instalação realizada com sucesso.
+siga as instruções de uso no repositório https://github.com/actiago/restic-local-backup
