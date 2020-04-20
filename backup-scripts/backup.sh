@@ -16,7 +16,7 @@ RETENTION_YEARS=3
 
 BackupDestination="/home/tiago/MEGAsync/restic-backup"
 BackupSource="/home/tiago/projetos /home/tiago/Pictures /home/tiago/Documents /home/tiago/Desktop"
-BackupExcludes="--exclude-file .backup_exclude ~/.restic/.env/backup-exclude"
+BackupExcludes="--exclude-file ~/.restic/.env/backup-exclude"
 BackupTag=Work.Backup
 
 source ~/.restic/.env/restic.env
@@ -39,3 +39,5 @@ restic -r $BackupDestination forget \
 wait $!
 
 echo "Backup & cleaning is done."
+
+sh ./slack-notifications
