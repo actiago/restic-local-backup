@@ -17,9 +17,11 @@ sudo cp backup-scripts/backup.sh /usr/local/bin/do-backup
 sudo cp backup-scripts/backup-check.sh /usr/local/bin/check-backup
 sudo cp backup-scripts/slack-notification.sh /usr/local/bin/slack-notification
 
-# Altera a permissão do arquivo .restic.env
+echo "Altere a permissão do arquivo .restic.env
+Ex:
 cd ~/.restic/.env
-chmod 400 restic.env
+chmod 400 restic.env"
 
 echo "Instalação realizada com sucesso.
-siga as instruções de uso no repositório https://github.com/actiago/restic-local-backup
+siga as instruções de uso no repositório https://github.com/actiago/restic-local-backup"
+
