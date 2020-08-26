@@ -1,5 +1,9 @@
 # Restic Local Backup
 
+Backup de dados em diretório local sincronizado com seu serviço de preferência.
+
+Inspirado pelo repositório [restic-systemd-automatic-backup](https://github.com/erikw/restic-systemd-automatic-backup).
+
 Cenário recomendado para uso em _desktops_.
 
 ## Requisitos
